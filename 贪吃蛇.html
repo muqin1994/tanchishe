@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>贪吃蛇案例</title>
+    <style>
+    body {
+        background-color: #ccc; 
+    }
+
+    .map {
+        width: 800px;
+        height: 600px;
+        background-color: #fff;
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        margin-left: -400px;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="map" id="map"></div>
+    <script src="./index.js"></script>
+    <script>
+    //获取地图
+    let map = document.getElementById('map');
+
+    //创建一个游戏控制器对象
+    let game1 = new Game(map);
+    //调用这个游戏控制器对象的start方法
+    game1.start();
+    
+    </script>
+</body>
+</html>
